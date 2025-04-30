@@ -24,6 +24,7 @@ Database: MySQL
 Tools: Git, GitHub, VS Code
 
 🧠 Project Members
+
 Aryan Sareen (Grp Leader)
 
 Akash
