@@ -1,49 +1,130 @@
 Grocery Store Management Application 🛒
-This is a Grocery Store Management Web Application developed as a group mini-project by three BCA students. The system helps manage inventory, orders, and customers efficiently through a clean user interface and robust backend.
+A Grocery Store Management Application built as a group project by three BCA (Hons.) students. The project focuses on creating a responsive, functional, and smart web-based grocery management system that handles product listings, orders, and user interaction. The application uses Flask (Python) for the backend, MySQL for the database, and HTML/CSS/JS for the frontend, styled with a Material UI-inspired theme.
 
-🔧 Features
-Add, edit, and delete products
+👨‍💻 Team Members
 
-Place and view customer orders
+Aryan sareen
 
-Automatic calculation of order totals
+Akash Sharma
+ 
+Tanish Sabharwaal
 
-Product data retrieval from MySQL database
+🧩 Problem Statement
+Managing a grocery store manually can lead to inefficiencies such as poor inventory tracking, no real-time updates, and product wastage. This project aims to digitize and automate these processes via a user-friendly web application.
 
-Responsive and user-friendly frontend design
+🎯 Objectives
+Create a centralized web-based inventory and order management system.
 
-Login page for user authentication
+Enable product listing, order placement, and dynamic updates.
 
-🖥️ Tech Stack
-Frontend: HTML, CSS, JavaScript
+Provide a modern, animated UI for enhanced user experience.
+
+Ensure integration with a real-time backend and database.
+
+Lay the foundation for AI-driven expiry prediction in future updates.
+
+⚙️ Tools & Technologies Used
+Frontend: HTML, CSS, JavaScript (Material UI theme)
 
 Backend: Python (Flask)
 
 Database: MySQL
 
-Tools: Git, GitHub, VS Code
+Libraries: flask, mysql-connector-python
 
-🧠 Project Members
+Design Tools: Figma (for layout inspiration)
 
-Aryan Sareen (Grp Leader)
+Version Control: Git & GitHub
 
-Akash
+📚 Libraries Used
+flask
 
-Tanish
+mysql-connector-python
 
-📁 Folder Structure
-pgsql
-Copy
-Edit
-/frontend         --> All UI files (HTML/CSS/JS)  
-/backend          --> Flask server & API logic  
+datetime
+
+json
+
+os (if applicable)
+
+Install using:
+pip install flask mysql-connector-python
+
+🧪 Folder Structure
+Grocery_Store_Management_Application/
+│
+├── backend/
+│   ├── server.py
+│   ├── sql_connection.py
+│   ├── products_dao.py
+│   ├── orders_dao.py
+│   └── venv/
+│
+├── frontend/
+│   ├── index.html
+│   ├── login.html
+│   ├── style.css
+│   ├── script.js
+│   └── assets/
+│
+├── database/
+│   └── grocery_store.sql
+│
+└── README.md
+
 🚀 How to Run
-Start MySQL server and import the database schema.
+Clone the repository
+git clone https://github.com/your-username/Grocery_Store_Management_Application.git
 
-Run the Flask backend:
+Navigate to backend and set up environment
+cd backend
+python -m venv venv
+venv\Scripts\activate  (for Windows)
+source venv/bin/activate (for Linux/Mac)
+pip install flask mysql-connector-python
 
-bash
-Copy
-Edit
+Set up the database
+
+Open MySQL client
+
+Create database: grocery_store
+
+Import the grocery_store.sql file
+
+Run the Flask server
 python server.py
-Open Home Page HTML.html in your browser.
+
+Server starts at: http://localhost:5000
+
+Open the frontend
+
+Launch index.html in your browser
+
+✨ Key Features
+Product listing from MySQL database
+
+Order placement and saving with timestamps
+
+Dynamic and responsive frontend UI
+
+Basic login/signup page
+
+Material UI-inspired theme
+
+Flask API endpoints for CRUD operations
+
+🧭 Future Work
+Admin dashboard with authentication
+
+AI-based expiry prediction model
+
+Auto-discount suggestion on near-expiry products
+
+Inventory threshold alerts
+
+Export reports (PDF/Excel)
+
+Mobile app version
+
+📝 Conclusion
+This project gave our team a chance to explore full-stack development, backend integration, and teamwork. It represents a strong foundational structure that can evolve into a powerful, AI-enhanced inventory management system.
